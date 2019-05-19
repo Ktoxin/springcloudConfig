@@ -1,9 +1,9 @@
 spring: 
-  profiles: 
-    active: 
+  profiles:
+    active:
     - dev
 --- 
-server: 
+server:
   port: 8001
 spring: 
    profiles: dev
@@ -23,7 +23,7 @@ spring: 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.atguigu.springcloud.entities
-  mapper-locations: 
+  mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 
 
