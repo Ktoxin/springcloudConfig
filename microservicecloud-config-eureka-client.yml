@@ -4,7 +4,7 @@ spring:
     - dev
 ---
 server:
-  port:7001
+  port: 7001
     
 spring:
   profiles: dev
@@ -13,15 +13,15 @@ spring:
         
 eureka:
   instance:
-    hostname: erueka7001.com
+    hostname: eureka7001.com
   client:
-    register-witj-eureka: false
+    register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
 ---            
 server:
-    port:7001
+  port: 7001
     
 spring:
   profiles: test
@@ -30,9 +30,9 @@ spring:
         
 eureka:
   instance:
-    hostname: erueka7001.com
+    hostname: eureka7001.com
   client:
-    register-witj-eureka: false
+    register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
